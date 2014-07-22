@@ -25,8 +25,7 @@ router.get('/url/:url', function(req, res, next){
       res.send(body);
     }
     res.render('error', {
-      message: 'URL '+url+ ' não pode ser requisitada',
-      error.status: response.statusCode});
+      message: 'URL '+url+ ' não pode ser requisitada'});
   });
 });
 
